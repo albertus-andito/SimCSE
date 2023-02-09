@@ -1,5 +1,7 @@
 ## SimCSE: Simple Contrastive Learning of Sentence Embeddings
 
+###*This is a fork of the original SimCSE repository. It now supports latest version of HuggingFace Transformers library*
+
 This repository contains the code and pre-trained models for our paper [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821).
 
 **************************** **Updates** ****************************
