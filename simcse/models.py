@@ -299,6 +299,7 @@ class BertForCL(BertPreTrainedModel):
         sent_emb=False,
         mlm_input_ids=None,
         mlm_labels=None,
+        return_loss=True, # hack so that the prediction_step in evaluation_loop can print the eval_loss
     ):
         if sent_emb:
             return sentemb_forward(self, self.bert,
@@ -358,6 +359,7 @@ class RobertaForCL(RobertaPreTrainedModel):
         sent_emb=False,
         mlm_input_ids=None,
         mlm_labels=None,
+        return_loss=True,  # hack so that the prediction_step in evaluation_loop can print the eval_loss
     ):
         if sent_emb:
             return sentemb_forward(self, self.roberta,
